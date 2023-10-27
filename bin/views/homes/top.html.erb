@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!--CSRF対策？フォームのセキュリティ確保？-->
+  <meta name="csrf-param" content="authenticity_token" />
+　<meta name="csrf-token" content="PXDqTFvSVIYBa8b3QB4S8+8elkBsAWdzxAW9sXom74ESSAFDepWUrP+W+TAwkdwy9j33W7aUAK7ODOp7BGN0DQ==" />
+　<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>top画面</title>
+  <!--hrefにはhtmlファイルから見てscssがappディレクトリと同じ階層にあるので/assetsから場所を指定する-->
+  <!--Turbolinksの動作はRailsアプリケーションに統合されている？指定する必要はない？-->
+  <link rel="stylesheets" media="all" href="/assets/stylesheets/homes.scss" data-turbolinks-track="reload" />
+  <!--JavaScriptのTurbolinksというJavaScriptライブラリの動作を制御するために記述？-->
+  <script src="/assets/application-114264dd93c8ff30e4335b71eed7949d66c4e7a8eb62e2de6284c046fe07104b.js" data-turbolinks-track="reload"></script>
+</head>
+
+ <body>
+  <h1>ようこそ <strong>Bookers</strong> へ！</h1>
+<p><strong>Bookers</strong>では、さまざまな書籍に関するあなたの意見や</p>
+<p>印象を共有し交換する事ができます</p>
+<p><%= link_to 'start', books_path %></p>
+ </body>
+
+</html>
